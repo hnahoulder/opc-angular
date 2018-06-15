@@ -5,7 +5,8 @@ import {FormsModule} from '@angular/forms';
 
 import {AppComponent} from './app.component';
 import {MonPremierComponent} from './mon-premier/mon-premier.component';
-import {AppareilComponent} from './appareil/appareil.component';
+import {AppareilComponent} from './appareil/appareil.component'
+import {AppareilService} from './services/appareil.service';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import {AppareilComponent} from './appareil/appareil.component';
         BrowserModule,
         FormsModule
     ],
-    providers: [],
+    providers: [AppareilService],
     bootstrap: [AppComponent]
 })
 export class AppModule {
